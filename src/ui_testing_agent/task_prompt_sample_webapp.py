@@ -1,4 +1,4 @@
-task = """
+task_sample_webapp = """
 ### Webapp Form Filler Test Agent
 
 **Objective:**

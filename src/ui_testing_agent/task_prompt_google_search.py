@@ -1,4 +1,4 @@
-task = """
+task_google_search = """
    ### Google search agent
 
 **Objective:**

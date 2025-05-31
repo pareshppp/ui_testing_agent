@@ -17,8 +17,8 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from browser_use import Agent
 from browser_use.browser import BrowserSession
 
-from task_prompt_sample_webapp import task
-# from task_prompt_google_search import task
+from task_prompt_sample_webapp import task_sample_webapp
+# from task_prompt_google_search import task_google_search
 
 # unique_id = uuid.uuid4()
 # datetime timestamp based unique id
@@ -32,7 +32,8 @@ browser_session = BrowserSession(
 )
 
 agent = Agent(
-	task=task,
+	task=task_sample_webapp,
+    # task=task_google_search,
 	llm=ChatGoogleGenerativeAI(model='gemini-2.0-flash-001', api_key=os.getenv('GEMINI_API_KEY')),
 	browser_session=browser_session,
     # controller=custom_controller,  # For custom tool calling
