@@ -24,7 +24,7 @@ A Python-based UI testing agent for automating browser interactions and testing 
 
 3. Install the required Python packages using `uv`:
    ```bash
-   uv install
+   uv sync
    ```
    
 4. Install playwright:
